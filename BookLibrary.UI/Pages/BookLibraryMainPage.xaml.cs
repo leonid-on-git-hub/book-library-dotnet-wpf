@@ -28,7 +28,7 @@ namespace BookLibrary.UI.Pages
             tbSearch.TextChanged += Search_Text_Changed;
             tbFilter.TextChanged += Filter_Text_Changed;
             BtnAddBook.Click += BtnAddBook_Click;
-            BtnEditBook.Click += BtnEditBook_Click;
+            BtnSaveBook.Click += BtnSaveBook_Click;
             BtnTrackBook.Click += BtnTrackBook_Click;
             BtnDeleteBook.Click += BtnDeleteBook_Click;
             BtnFirstPage.Click += BtnFirstPage_Click;
@@ -79,7 +79,7 @@ namespace BookLibrary.UI.Pages
             NavigationService.Navigate(new AddBookPage());
         }
 
-        private void BtnEditBook_Click(object sender, RoutedEventArgs e)
+        private void BtnSaveBook_Click(object sender, RoutedEventArgs e)
         {
             var book = BooksGrid.SelectedItem as Models.BooksModels.Book;
             if (book == null) return;
@@ -162,21 +162,21 @@ namespace BookLibrary.UI.Pages
 
         private void DataGrid_Row_Click(object sender, SelectionChangedEventArgs e)
         {
-            if (BtnEditBook.IsEnabled == false || BtnDeleteBook.IsEnabled == false || BtnTrackBook.IsEnabled == false)
+            if (BtnSaveBook.IsEnabled == false || BtnDeleteBook.IsEnabled == false || BtnTrackBook.IsEnabled == false)
             {
-                BtnEditBook.IsEnabled = true;
+                BtnSaveBook.IsEnabled = true;
                 BtnTrackBook.IsEnabled = true;
                 BtnDeleteBook.IsEnabled = true;
             }
             if (BooksGrid.SelectedItems.Count == 0)
             {
-                BtnEditBook.IsEnabled = false;
+                BtnSaveBook.IsEnabled = false;
                 BtnTrackBook.IsEnabled = false;
                 BtnDeleteBook.IsEnabled = false;
             }
             if (BooksGrid.SelectedItems.Count > 1)
             {
-                BtnEditBook.IsEnabled = false;
+                BtnSaveBook.IsEnabled = false;
                 BtnTrackBook.IsEnabled = false;
             }
         }

@@ -32,7 +32,7 @@ namespace BookLibrary.UI.Pages
             bookView.BookYear = _book.Year;
 
             BtnBackward.Click += BtnBackward_Click;
-            BtnEditBook.Click += BtnUpdateBook_Click;
+            BtnSaveBook.Click += BtnUpdateBook_Click;
         }
 
         private void BtnBackward_Click(object sender, RoutedEventArgs e)

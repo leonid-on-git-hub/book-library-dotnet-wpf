@@ -38,7 +38,7 @@
                 <Button x:Name="BtnAddBook" Content="Add" Style="{StaticResource MyButton}" Height="50" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="18" Padding="1,1,10,1" Foreground="#FF2FF341" HorizontalAlignment="Left" Width="75" BorderBrush="{x:Null}" Grid.RowSpan="3">
 
                 </Button>
-                <Button x:Name="BtnEditBook" Content="Edit" Style="{StaticResource MyButton}" IsEnabled="False" Height="50" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="18" Padding="1,1,10,1" Foreground="#FFFFD200" HorizontalAlignment="Left" Width="75" BorderBrush="{x:Null}" Grid.RowSpan="3">
+                <Button x:Name="BtnSaveBook" Content="Edit" Style="{StaticResource MyButton}" IsEnabled="False" Height="50" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="18" Padding="1,1,10,1" Foreground="#FFFFD200" HorizontalAlignment="Left" Width="75" BorderBrush="{x:Null}" Grid.RowSpan="3">
 
                 </Button>
                 <Button x:Name="BtnDeleteBook" Content="Delete" Style="{StaticResource MyButton}" IsEnabled="False" Height="50" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="18" Padding="1,1,10,1" Foreground="Red" HorizontalAlignment="Left" Width="75" BorderBrush="{x:Null}" Grid.RowSpan="3">
